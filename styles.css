@@ -1,0 +1,232 @@
+/* Css main */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+  }
+  body{
+    font-family: Verdana;
+    background-color: wheat;
+  
+  }
+  
+  nav{
+    background: whitesmoke;
+    height: 80px;
+    width: 100%;
+    position:-webkit-sticky;
+  }
+  label.logo{
+    color: black;
+    font-size: 35px;
+    line-height:80px;
+    padding: 0 100px;
+    
+  }
+  nav ul{
+    float: right;
+    margin-right: 50px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+  }
+  nav ul li a{
+    color:rgb(0, 0, 0);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .Home {
+    background-color: wheat;
+    }
+    .section__container {
+      min-height: 50vh;
+      margin: auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two columns: image on the left, text on the right */
+      gap: 3rem; /* Adjusted gap to provide more spacing */
+      align-items: center; /* Center content vertically */
+    }
+    
+    .image-container {
+      display: flex;
+      justify-content: center; /* Center the image horizontally */
+      align-items: center; /* Center the image vertically */
+    }
+    
+    .image-container img {
+      max-width: 100%; /* Make sure the image doesn't overflow */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px; /* Optional: rounded corners for the image */
+    }
+    
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Center text vertically within its column */
+    }
+    
+    .subtitle {
+      letter-spacing: 2px;
+      color: #2F2F2F;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+      font-weight: 400;
+      line-height: 3rem;
+      color: #000000;
+      margin-bottom: 1rem;
+    }
+    
+    .title span {
+      font-weight: 600;
+    }
+    
+    .description {
+      line-height: 1.5rem;
+      color: #2F2F2F;
+      margin-bottom: 2rem;
+      font-size: 1.2rem;
+    }
+    
+    .action__btns {
+      display: flex;
+      gap: 1rem;
+    }
+    
+    .action__btns button {
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      padding: 1rem 2rem;
+      outline: none;
+      border: 2px solid #2F2F2F;
+      border-radius: 10px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .portfolio {
+      color: var(--primary-color);
+    }
+    
+    .portfolio:hover {
+      background-color: #E0E0E0;
+      color: #000000;
+    }
+    
+    .section__container1 {
+      min-height: 20vh;
+      margin: auto;
+      padding: 5rem;
+      gap: 3rem; /* Adjusted gap to provide more spacing */
+      align-items: center; /* Center content vertically */
+    }
+    .us{
+    background-color: wheat;
+   }
+   
+   .para {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #000000;
+    margin-bottom: 1rem;
+  }
+  
+  .para span {
+    font-weight: 600;
+  }
+  .custom-list {
+    list-style: none; /* Remove default numbering */
+    padding-left: 0; /* Remove default padding */
+    margin-top: 2rem; /* Add some margin to the top */
+  }
+  
+  .custom-list li {
+    position: relative; /* Position relative to allow absolute positioning of the symbol */
+    padding-left: 1.5rem; /* Space for the symbol */
+    margin-bottom: 0.8rem; /* Spacing between list items */
+    font-size: 2rem; /* Font size for list items */
+  }
+  
+  .custom-list li::before {
+    content: "✔"; /* Unicode or any symbol you'd like */
+    color: #2F2F2F; /* Symbol color */
+    font-size: 1.2rem; /* Size of the symbol */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align it to the left */
+    top: 0; /* Align to the top of the list item */
+  }
+  
+      
+      
+    
+  
+/* Responsive css  */
+@media (max-width: 900px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: white;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  nav ul li a:hover,a.active{
+      background: none;
+      color: black;
+  }
+  #check:checked ~ ul{
+      left: 0;
+  }
+  .section__container {
+      padding: 10rem 1rem 5rem 1rem;
+      text-align: center;
+      grid-template-columns: 1fr;
+  }
+
+  .image {
+      grid-area: 1/1/2/2;
+      justify-content: center;
+  }
+
+  .action__btns {
+      margin: auto;
+  }
+}
